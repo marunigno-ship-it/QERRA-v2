@@ -19,8 +19,10 @@ The **real kicker? QERRA** (Quantum Ethical Rescue Resource Allocator)—a hybri
 3. Run a sim: `python src/qerra_sim.py` (coming soon—basic ethical allocator demo).
 
 ## Whitepaper & Prototypes
-- [Full QERRA Whitepaper](docs/whitepaper.md) - Quantum ethics, algo math, sim results.
 
+https://gist.github.com/marunigno-ship-it/xyz789ghi012
+
+Prototypes: src/qerra_sim.py coming soon—hybrid QuTiP/SciPy for NISQ. Test locally via Get Started.
 
 
 ## Roadmap
@@ -35,4 +37,7 @@ Stars/forks = fuel! ⭐️ #QAI #QERRA #QuantumAI #EthicalRobotics
 
 Contact: @marunigno | Powered by Grok & xAI dreams.
 Update README with QAI overview
+
+Add whitepaper link.
+
 
