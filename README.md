@@ -20,7 +20,7 @@ The **real kicker? QERRA** (Quantum Ethical Rescue Resource Allocator)—a hybri
 
 ## Whitepaper & Prototypes
 
-[QERRA Whitepaper] (https://gist.github.com/marunigno-ship-it/c7a65c20c18f6471882934975e05c26f ) - Quantum ethics, algo math, sim results
+[QERRA Whitepaper] ( https://gist.github.com/marunigno-ship-it/1c2cb425f07ff08de762b4033b5bdff8 ) - Quantum ethics, algo math, sim results.
 
 
 
