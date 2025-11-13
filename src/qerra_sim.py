@@ -5,4 +5,3 @@ Optimal Resource Allocation: [3.00000000e+00 2.72004641e-15 5.74362087e-16]
 Ethical Score: 8.999999999999996
 
 Process finished with exit code 0
-
