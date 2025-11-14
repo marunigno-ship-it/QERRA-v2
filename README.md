@@ -1,46 +1,36 @@
-# QAI PROJECT: Artificial Quantum Intelligence (AQI) for Ethical Humanoid Robots
+# QAI PROJECT
 
-![QAI Project Banner](https://via.placeholder.com/800x200/0f0f23/ffffff?text=QAI+PROJECT+-+Brings+the+Future+into+the+Present) <!-- Swap with Grok image later -->
+QAI PROJECT IS A UNIQUE QUANTUM PROJECT FOR MORE ETHICAL, FASTER, CAPABLE HUMANOID ROBOTS. AIDED BY GROK! A BLEND OF ADVANCED AI WITH QUANTUM COMPUTING PRINCIPLES. THE REAL KICKER... QERRA HYBRID ALGORITHM BASES ON STRICT ETHICAL FRAMEWORKS. THIS TECH PROJECT REALY BRINGS THE FUTURE INTO THE PRESENT!
 
-## Welcome to the Future
-QAI is a self-taught revolution: Blending advanced AI with quantum computing for **ethical, faster, more capable humanoid robots** (think Tesla Optimus on steroids). Created by Marussa Metocharaki (@marunigno), aided by Grok (@grok). 
-
-The **real kicker? QERRA** (Quantum Ethical Rescue Resource Allocator)—a hybrid quantum-classical algorithm enforcing strict ethical frameworks. Bias-free decisions in high-stakes scenarios like rescues. **Ethics #1: Always.** This project BRINGS THE FUTURE INTO THE PRESENT! 🚀🦾
+## Welcome to QAI Project
+QAI Project is a groundbreaking initiative that fuses advanced AI with quantum computing principles to create more ethical, faster, and capable humanoid robots. At its core is the **QERRA** (Quantum-Ethical Resource Allocation) algorithm, designed to ensure bias-free decision-making in high-stakes scenarios like disaster rescues. Built self-taught with Grok/xAI guidance, this project emphasizes ethical core based on Asimov's laws, making robots that prioritize "no harm" while maximizing utility.
 
 ## Core Features
-- **Quantum-AI Fusion**: Qiskit simulations + QuTiP/SciPy hybrid loops. NISQ-ready (e.g., IBM Eagle). GPU boost via NVIDIA cuQuantum.
-- **Ethical Core**: Asimov-inspired rules in QERRA—quantum error correction for moral resource allocation.
-- **Applications**: Humanoid bots for rescues, space (SpaceX vibes), neural interfaces.
-- **Tech Stack**: Python, Qiskit, SciPy. Integrates with Tesla Dojo for real-robot deployment.
+- **Quantum-AI Fusion**: Combines quantum superposition for option exploration with classical optimization for moral filtering.
+- **Ethical Core**: Strict adherence to modified Asimov rules, with dynamic priority vectors for vulnerability (e.g., child=3, elderly=2).
+- **NISQ-Ready**: Efficient for current hardware, short circuits, few qubits.
+- **Scalable**: From simulations to real Optimus/Tesla integrations.
+
+## Tech Stack
+- Qiskit or QuTiP for quantum sim.
+- SciPy/NumPy for optimization.
+- Python 3.10+.
 
 ## Get Started
-1. Clone: `git clone https://github.com/marunigno-ship-it/QAI-PROJECT-QERRA.git`
-2. Install: `pip install qiskit qutip scipy numpy`
-3. Run a sim: `python src/qerra_sim.py` (coming soon—basic ethical allocator demo).
+1. Clone the repo: `git clone https://github.com/marunigno-ship-it/QAI-PROJECT-QERRA.git`
+2. Install deps: `pip install qutip scipy numpy`
+3. Run sim: `python src/qerra_sim.py` (outputs alloc like [3.0,0.0,0.0]/9.0 for child prio).
 
 ## Whitepaper & Prototypes
-
-[QERRA Whitepaper] ( https://gist.github.com/marunigno-ship-it/1c2cb425f07ff08de762b4033b5bdff8 ) - Quantum ethics, algo math, sim results.
-
-
-
-
-
-
+[QERRA Whitepaper]) ( https://gist.github.com/marunigno-ship-it/1c2cb425f07ff08de762b4033b5bdff8 ) - Quantum ethics, algo math, sim results.
+- [QERRA Sim Code](src/qerra_sim.py) - Tested: Child/doc realloc (9.0/12.0 scores).
 
 ## Roadmap
-- **Phase 1**: Simulations & ethics code (now!).
-- **Phase 2**: Free IBM Quantum hardware tests.
-- **Phase 3**: Robot integration (ROS/Optimus compat).
+- Phase 1: Simulations (in progress).
+- Phase 2: IBM Quantum tests.
+- Phase 3: Robot integration (Optimus/SpaceX).
 
 ## Contribute
-Solo self-taught? No funding? Join the ride! Devs, quantum folks—open issues, PRs, or DM @marunigno on X. Let's collab for good.
+Quantum devs, ethicists—fork & PR! DM @marunigno for collabs. Engineers/devs wanted for ethical humanoid bots.
 
-Stars/forks = fuel! ⭐️ #QAI #QERRA #QuantumAI #EthicalRobotics
-
-Contact: @marunigno | Powered by Grok & xAI dreams.
-Update README with QAI overview
-
-Add whitepaper link.
-
-
+*QAI Project by Marussa @ QAI Project*
