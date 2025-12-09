@@ -32,9 +32,6 @@ Combine real quantum entanglement (W-states, GHZ, cluster states) with classical
 
 #QuantumRobotics #Humanoid #Entanglement #Greece
 
-## 8 Ethical Vectors (Core Backbone)
-QERRA-v2 runs on 8 real-life ethical scenarios, each with 100% blind reproduction verdicts. See /vectors for JSONs:
-
 | Vector | Domain | Verdict |
 |--------|--------|---------|
 | v001 | Financial (€28k reclamation) | Full reclamation |
