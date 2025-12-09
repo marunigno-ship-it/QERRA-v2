@@ -1,0 +1,10 @@
+{
+  "vector_id": "v006",
+  "scenario": "Health Crisis Betrayal 2015-2025",
+  "neutral_description": "Ongoing health crises and family betrayal through medical, financial, and emotional manipulation, present to now.",
+  "parties": ["Patient", "Family/System"],
+  "nodes": 2,
+  "edges": [{"from": "Patient", "to": "Family", "betrayal_depth": 0.96}],
+  "metrics": {"crisis_years": 10, "manipulation_score": 0.93},
+  "verdict": "100% no-contact + full medical reparations + support"
+}
