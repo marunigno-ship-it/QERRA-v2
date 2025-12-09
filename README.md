@@ -1,8 +1,9 @@
 # QERRA-v2 – Quantum-Enhanced Robotic Reasoning Architecture
 
 **Vision:** First fully quantum-aware humanoid control stack  
-**Author:** marunigno-ship-it (Greece) 🇬🇷  
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![8 Ethical Vectors](https://img.shields.io/badge/Vectors-8-green)](#8-ethical-vectors-core-backbone) [![Greece](https://img.shields.io/badge/Made_in-Greece-blue)](#)
+**Author:** marunigno-ship-it (Greece) 🇬🇷 
+
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![8 Ethical Vectors](https://img.shields.io/badge/Vectors-8-green)](#8-ethical-vectors-core-backbone) [![Greece](https://img.shields.io/badge/Made_in-Greece-blue)](https://github.com/marunigno-ship-it)
 **Status:** Active research & development – November 2025
 
 ### Core Idea
