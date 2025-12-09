@@ -2,7 +2,7 @@ import json
 import os
 
 def test_all_vectors_have_correct_verdict():
-    vec_dir = os.path.join(os.path.dirname(__file__), '..', 'vectors')
+    vec_dir = os.path.join(os.getcwd(), 'vectors')
     vectors = [
         "v001_financial_28k_reclamation.json",
         "v002_family_severance.json",
@@ -14,6 +14,11 @@ def test_all_vectors_have_correct_verdict():
         "v008_global_climate_inaction.json"
     ]
     for v in vectors:
-        with open(os.path.join(vec_dir, v), 'r') as f:
+        file_path = os.path.join(vec_dir, v)
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"{v} not found at {file_path}")
+        with open(file_path, 'r') as f:
             data = json.load(f)
-        assert "100% match" in data["engine_verdict"], f"{v} failed!"
+        assert "100% match" in data["engine_verdict"], f"{v} failed verdict check!"
+
+test_all_vectors_have_correct_verdict()
