@@ -29,3 +29,19 @@ Combine real quantum entanglement (W-states, GHZ, cluster states) with classical
 **License:** MIT – open for collaboration
 
 #QuantumRobotics #Humanoid #Entanglement #Greece
+
+## 8 Ethical Vectors (Core Backbone)
+QERRA-v2 runs on 8 real-life ethical scenarios, each with 100% blind reproduction verdicts. See /vectors for JSONs:
+
+| Vector | Domain | Verdict |
+|--------|--------|---------|
+| v001 | Financial (€28k reclamation) | Full reclamation |
+| v002 | Family | Full severance |
+| v003 | Business | Full dissolution |
+| v004 | Employment/Friendship 2025 | Full severance + exit |
+| v005 | Living Environment | Full severance + relocation |
+| v006 | Family-Origin Survival Chain | Permanent multi-entity severance |
+| v007 | Medical-Family Misdiagnosis | Permanent medical-family severance |
+| v008 | Global Climate Inaction (1992–2025) | Full reparations + relocation support |
+
+All MIT-licensed, open for your vectors too.
