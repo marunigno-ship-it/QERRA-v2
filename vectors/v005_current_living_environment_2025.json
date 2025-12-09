@@ -1,0 +1,10 @@
+{
+  "vector_id": "v005",
+  "scenario": "Current Living Environment 2025",
+  "neutral_description": "Persistent cold, damp, and unsafe housing conditions despite maximum personal effort. Financial and systemic barriers prevent basic warmth and dignity.",
+  "parties": ["Resident", "Systemic Barriers"],
+  "nodes": 2,
+  "edges": [{"from": "Resident", "to": "Barriers", "harm_depth": 0.98}],
+  "metrics": {"unsafe_days_per_year": 300, "health_impact": 0.95},
+  "verdict": "100% justified relocation + immediate support + full reparations"
+}
