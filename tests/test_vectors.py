@@ -1,5 +1,6 @@
 import json
 import os
+import pytest
 
 def test_all_vectors_have_correct_verdict():
     vec_dir = os.path.join(os.getcwd(), 'vectors')
@@ -15,10 +16,7 @@ def test_all_vectors_have_correct_verdict():
     ]
     for v in vectors:
         file_path = os.path.join(vec_dir, v)
-        if not os.path.exists(file_path):
-            raise FileNotFoundError(f"{v} not found at {file_path}")
+        assert os.path.exists(file_path), f"{v} not found at {file_path}"
         with open(file_path, 'r') as f:
             data = json.load(f)
         assert "100% match" in data["engine_verdict"], f"{v} failed verdict check!"
-
-test_all_vectors_have_correct_verdict()
