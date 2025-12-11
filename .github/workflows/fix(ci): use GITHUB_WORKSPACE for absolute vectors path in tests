@@ -11,5 +11,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install pytest
+        run: pip install pytest
       - name: Run tests
-        run: python -m pytest tests/test_vectors.py -v
+        run: |
+          cd $GITHUB_WORKSPACE
+          python -m pytest tests/test_vectors.py -v
