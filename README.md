@@ -14,7 +14,8 @@ Combine real quantum entanglement (W-states, GHZ, cluster states) with classical
 
 ### Current Milestones
 - 8-qubit W-state successfully executed on IBM QUBS (127-qubit Eagle)  
-  → Proof: https://github.com/marunigno-ship-it/8qubit-wstate-qubs  
+  → Proof: https://github.com/marunigno-ship-it/8qubit-wstate-qubs
+   ![8-qubit W-state results on real IBM hardware](wstate_results_proof.png)
 - Quantum state vector as robot “belief state” prototype  
 - Qiskit + ROS2 bridge in development
 
