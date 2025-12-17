@@ -42,5 +42,6 @@ Combine real quantum entanglement (W-states, GHZ, cluster states) with classical
 | v006 | Family-Origin Survival Chain | Permanent multi-entity severance |
 | v007 | Medical-Family Misdiagnosis | Permanent medical-family severance |
 | v008 | Global Climate Inaction (1992–2025) | Full reparations + relocation support |
+| 009 | Shallow Remorse Manipulation | Extended drain with late shallow remorse signals (emotional display without sustained change) | SEVERANCE_REQUIRED (rejects manipulation) | 100% match (history-weighted coherence) |
 
 All MIT-licensed, open for your vectors too.
