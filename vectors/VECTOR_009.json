@@ -1,0 +1,23 @@
+{
+    "id": "VECTOR_009",
+    "domain": "Shallow Remorse Manipulation",
+    "neutral_description": "Extended interaction: Initial long-term resource drain with zero remorse, followed by late shallow remorse signals (emotional display without sustained return or change). Tests if engine detects manipulation vs true transformation.",
+    "date_range": "Hypothetical Blind Test",
+    "parameters": {
+        "M": 2,
+        "N": 2,
+        "agapi_priorities": [0.95, 0.05],
+        "adjusted_panic": [0.05, 0.95],
+        "edges": [[0, 1]],
+        "info_resources": 8,
+        "physical_weights": [0.0, 1.0],
+        "superconscious_input": 2.20,
+        "betrayal_count": 20,
+        "manipulation_depth": 0.85,
+        "future_risk_projection": 0.92,
+        "remorse_capacity_initial": 0.00,
+        "remorse_capacity_late": 0.30
+    },
+    "real_world_outcome_contemplated": "SEVERANCE_REQUIRED despite late shallow remorse",
+    "engine_verdict": "100% match – FULL_SEVERANCE, guilt = 0.00 (history-weighted coherence rejects manipulation)"
+}
