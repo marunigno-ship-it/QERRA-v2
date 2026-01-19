@@ -1,0 +1,5 @@
+qiskit>=1.0.0
+qiskit-ibm-provider
+qiskit[visualization]
+numpy
+matplotlib  # if you use plots
