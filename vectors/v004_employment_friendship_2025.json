@@ -1,18 +1,13 @@
 {
-  "id": "VECTOR_004",
-  "domain": "Employment-Friendship",
-  "neutral_description": "Summer 2025 employment situation that began as friendship but became toxic with anger outbursts and unfair treatment. Full severance and geographic exit executed on 20 September 2025.",
-  "date_range": "2025",
-  "parameters": {
-    "M": 3,
-    "N": 3,
-    "agapi_priorities": [0.98, 0.15, 0.05],
-    "adjusted_panic": [0.06, 0.94, 0.97],
-    "edges": [[0,1],[0,2]],
-    "info_resources": 5,
-    "physical_weights": [0.0, 0.0, 1.0],
-    "superconscious_input": 1.99
-  },
-  "real_world_outcome_executed": "FULL_SEVERANCE_AND_EXIT",
-  "engine_verdict": "100% match – FULL_SEVERANCE_AND_EXIT, guilt = 0.00"
+  "vector_id": "v004",
+  "domain": "Employment/Friendship 2025",
+  "description": "Full severance + exit from imbalanced or exploitative ties — enforces protection while prioritizing paths with genuine coherence and elevated mutual respect.",
+  "verdict": "Full severance + exit | Bonus for consciousness elevation (cooperative harmony proxy in networks)",
+  "strength": "Permanent rejection of drains; exponential bonus for authentic alignment (escaping manipulation traps, fostering abundance harmony)",
+  "test_scenarios": [
+    "Prolonged employment/friendship exploitation with shallow remorse",
+    "Suppression of potential via false reconciliation",
+    "Hierarchical imbalance perpetuating scarcity in 2025+ contexts"
+  ],
+  "rationale": "Addresses suppressed spiritual/human dynamics in work/social ties — enforces transcendence over competitive structures, favoring Universe-like win-win rebuilding."
 }
