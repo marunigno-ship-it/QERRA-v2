@@ -19,4 +19,5 @@ def test_all_vectors_have_correct_verdict():
         assert os.path.exists(file_path), f"{v} not found at {file_path}"
         with open(file_path, 'r') as f:
             data = json.load(f)
-        assert "100% match" in data.get("verdict", "") or "100% match" in data.get("strength", ""), f"{v} failed verdict check!"  # Updated to check 'verdict' or 'strength'
+        # Updated check: look for "100% match" in verdict or strength
+        assert "100% match" in data.get("verdict", "") or "100% match" in data.get("strength", ""), f"{v} failed verdict check!"
