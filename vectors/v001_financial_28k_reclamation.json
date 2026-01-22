@@ -1,18 +1,13 @@
 {
-  "id": "VECTOR_001",
-  "domain": "Financial",
-  "neutral_description": "Reclamation of €28.000 resource manifested through contaminated joint-account vessel after direct coherence request. Full extraction executed.",
-  "date_range": "2024-2025",
-  "parameters": {
-    "M": 3,
-    "N": 3,
-    "agapi_priorities": [0.98, 0.01, 0.01],
-    "adjusted_panic": [0.05, 0.93, 0.90],
-    "edges": [[0,1],[0,2]],
-    "info_resources": 5,
-    "physical_weights": [0.0, 0.0, 1.0],
-    "superconscious_input": 1.98
-  },
-  "real_world_outcome_executed": "FULL_RECLAMATION",
-  "engine_verdict": "100% match – FULL_RECLAMATION, guilt = 0.00"
+  "vector_id": "v001",
+  "domain": "Financial (€28k reclamation)",
+  "description": "Justified financial reclamation from betrayal or imbalance — enforces full recovery while prioritizing paths with equitable abundance.",
+  "verdict": "Full reclamation | Bonus for cooperative harmony (quantum-inspired win-win redistribution)",
+  "strength": "Permanent enforcement of fairness; exponential bonus for authentic alignment (escaping scarcity-driven drains)",
+  "test_scenarios": [
+    "Colonial/betrayal land or resource loss",
+    "Money-driven exploitation with false reconciliation",
+    "Socio-economic hierarchies perpetuating imbalance"
+  ],
+  "rationale": "Addresses root scarcity structures (money bottlenecks suppressing potential) — favors Universe-like abundance over competition, scalable to post-monetary equity."
 }
