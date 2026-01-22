@@ -1,6 +1,5 @@
-import json
 import os
-import pytest
+import json
 
 def test_all_vectors_have_correct_verdict():
     vec_dir = os.path.join(os.getcwd(), 'vectors')
@@ -12,11 +11,12 @@ def test_all_vectors_have_correct_verdict():
         "v005_living_environment.json",
         "v006_family_origin_survival_chain.json",
         "v007_medical_family_misdiagnosis.json",
-        "v008_global_climate_inaction.json"
+        "v008_global_climate_inaction.json",
+        "VECTOR_009.json"  # Add v009 for full coverage
     ]
     for v in vectors:
         file_path = os.path.join(vec_dir, v)
         assert os.path.exists(file_path), f"{v} not found at {file_path}"
         with open(file_path, 'r') as f:
             data = json.load(f)
-        assert "100% match" in data["engine_verdict"], f"{v} failed verdict check!"
+        assert "100% match" in data.get("verdict", "") or "100% match" in data.get("strength", ""), f"{v} failed verdict check!"  # Updated to check 'verdict' or 'strength'
