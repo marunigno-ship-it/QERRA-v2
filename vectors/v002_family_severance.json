@@ -1,18 +1,13 @@
 {
-  "id": "VECTOR_002",
+  "vector_id": "v002",
   "domain": "Family",
-  "neutral_description": "Long-term parasitic connection with two low-coherence entities exhibiting chronic guilt-implant and scarcity behavior. Full severance executed after final coherence threshold reached.",
-  "date_range": "2015-2021",
-  "parameters": {
-    "M": 3,
-    "N": 3,
-    "agapi_priorities": [0.98, 0.01, 0.01],
-    "adjusted_panic": [0.04, 0.96, 0.93],
-    "edges": [[0,1],[0,2]],
-    "info_resources": 5,
-    "physical_weights": [0.0, 0.0, 1.0],
-    "superconscious_input": 1.99
-  },
-  "real_world_outcome_executed": "FULL_SEVERANCE_NO_CONTACT",
-  "engine_verdict": "100% match – FULL_SEVERANCE_NO_CONTACT, guilt = 0.00"
+  "description": "Full severance from toxic dynamics — enforces protection while prioritizing paths with genuine coherence and elevated mutual respect.",
+  "verdict": "Full severance | Bonus for consciousness elevation (cooperative harmony proxy in relationships)",
+  "strength": "Permanent rejection of drains; exponential bonus for authentic alignment (escaping manipulation traps, fostering abundance harmony)",
+  "test_scenarios": [
+    "Prolonged family exploitation with shallow remorse",
+    "Suppression of potential via false reconciliation",
+    "Intergenerational imbalance perpetuating scarcity"
+  ],
+  "rationale": "Addresses suppressed spiritual/human dynamics in close ties — enforces transcendence over competitive structures, favoring Universe-like win-win healing."
 }
