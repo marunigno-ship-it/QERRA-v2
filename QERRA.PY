@@ -1,10 +1,30 @@
 import numpy as np
 from qutip import *
 from scipy.optimize import minimize
+import requests  # For fetching quantum randomness
+import hashlib   # Extra security (optional but good )
+
+def get_quantum_seed():
+    try:
+        # Fetch 32 real quantum bytes from QDay (free, fast)
+        response = requests.get("https://qday.dev/v1/bytes?n=32&cnt=1&fmt=hex")
+        response.raise_for_status()  # Check if it worked
+        quantum_hex = response.text.strip()
+        
+        # Turn into a big safe seed number
+        seed_int = int(quantum_hex, 16)
+        print(f"Used real quantum seed: {quantum_hex}")  # Shows you the quantum string!
+        return seed_int
+    except:
+        # If internet issue, fallback to old fake seed
+        print("No connection—using fake seed for now")
+        return 42
+
 
 # QERRA: Quantum Ethical Rescue Resource Allocator by Marussa Metocharaki (@marunigno), aided by Grok (xAI)
 # VQC for ethical binary classification (e.g., allocate resources? 1=yes, 0=no)
-np.random.seed(42)  # Reproducibility
+quantum_seed = get_quantum_seed()
+np.random.seed(quantum_seed)  # Now truly quantum!
 num_samples = 500
 X = np.random.rand(num_samples, 4) * 2 * np.pi  # Features: [urgency, risk, ethical_impact, resource_avail]
 y = np.array([1 if np.sum(x) >= 6 else 0 for x in X])  # Ethical threshold
