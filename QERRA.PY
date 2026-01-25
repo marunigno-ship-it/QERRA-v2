@@ -2,7 +2,7 @@ import numpy as np
 from qutip import *
 from scipy.optimize import minimize
 import requests  # For fetching quantum randomness
-import hashlib   # Extra security (optional but good )
+import hashlib   # Extra security (optional but good)
 
 def get_quantum_seed():
     try:
