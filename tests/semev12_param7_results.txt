@@ -1,0 +1,21 @@
+SEMEV-12 Parameter 7 - VQC Resource Allocation Classifier Test Results
+
+Date: January 26, 2026
+Project: QERRA-v2 / QAI Ethical Framework
+Author: Marussa Metocharaki (@marunigno)
+
+Latest successful run details:
+- Quantum seed (real from qday.dev): 8d5bc2de82cf20f30ce6f93b4446d48a0aa40429636f5c1b1b22b65872eabbe1
+- Sample Data (first 3 rows): [[2.28578221 1.80014271 2.24978893 4.37757319], [5.66760025 5.48073636 3.59326397 5.95613593], [2.27500502 1.3605612  6.19178584 4.60267374]]
+- Sample Labels (first 3): [0 1 1]
+- Optimized Params: [0.78539816 0.78539816 0.78539816 0.78539816 0.78539816 0.78539816 0.78539816 1.78539816]
+- Training Cost: 0.465
+- Test Accuracy: 0.47
+- Param Magnitudes (Bias Check): Varied (some movement observed)
+
+Optimizer used: COBYLA with maxiter=200
+Threshold for labels: sum(features) >= 12 (balanced ~50/50)
+Prediction threshold: exp < 0.0
+Progress note: Parameters started changing (no longer fully stuck), learning has begun. Previous accuracies were 0.24–0.52.
+
+Next: Improve accuracy further, integrate etx parameter, commit full script.
