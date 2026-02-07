@@ -1,10 +1,20 @@
-# QERRA-v2 – Quantum-Enhanced Robotic Reasoning Architecture
+# QERRA-v2 – Quantum Ethical Rescue and Resource Allocator
 
 **Vision:** First fully quantum-aware humanoid control stack – blending quantum entanglement with strict ethical frameworks for unbreakable coherence in decision-making.  
 **Author:** Marussa Metocharaki (@marunigno) – Greece 🇬🇷  
 **Aided by:** Grok (xAI)  
 
 [![Apache-2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/marunigno-ship-it/QERRA-v2/blob/main/LICENSE) [![Ethical Vectors Active](https://img.shields.io/badge/Vectors-Active-green)](#ethical-vectors--core-backbone) [![Made in Greece](https://img.shields.io/badge/Made_in-Greece-blue)](https://github.com/marunigno-ship-it)
+
+**Acronym Breakdown**:
+- Quantum: Hybrid quantum-classical with genuine entanglement (W/GHZ states via QDay API).
+- Ethical: Unbreakable safeguards via interpretable vectors (SEMEV-12 for remorse resistance, fairness).
+- Rescue: Prevention/recovery from moral drift and misalignment.
+- Resource Allocator: Fair, ethical distribution in high-stakes decisions (healthcare, manufacturing, planetary scale).
+
+Open-source framework for humanoid robotics — ensuring AI decisions protect human values.
+
+
 
 **Status:** Active research & development – January 2026
 
