@@ -1,20 +1,22 @@
 # QERRA-v2 Project Structure
 
-To keep QERRA-v2 open and accessible while allowing for future sustainability, the project is divided into two layers:
+To preserve the ethical mission while enabling future sustainability and institutional adoption, the project is divided into two clear layers:
 
-## Core Layer (Fully Open-Source, Apache-2.0)
-- Ethical vectors (e.g., SEMEV-12, PEMEV-11, SEEV-12)  
-- Research algorithms and simulations (quantum entanglement, randomness seeding, toxicity detection)  
-- Basic classical/hybrid demos  
+## Core Layer (Fully Open-Source – Apache-2.0)
+- Ethical vectors (SEMEV-12, PEMEV-11, SEEV-12, etc.)
+- Research algorithms & simulations (quantum entanglement, randomness seeding, toxicity detection)
+- Basic classical/hybrid demos and documentation
+- Governance logic and philosophical foundation
 
-This core remains free forever for anyone to use, modify, or fork.
+This layer remains free forever for anyone to use, modify, or fork.
 
-## Edge Layer (Potential Licensable for Commercial Use)
-- Deployment adapters (e.g., hardened ROS2 integrations, real-time control bridges)  
-- High-reliability modules (error mitigation, fail-safe recovery)  
-- Security, compliance, and audit tools  
-- Certified enterprise distributions (e.g., "QERRA Certified" builds with support/SLAs)  
+## Edge Layer (Potential Future Licensable / Commercial)
+- Deployment adapters (e.g., hardened ROS2 integrations, real-time control bridges)
+- High-reliability modules (error mitigation, fail-safe recovery)
+- Security, compliance, and audit tooling
+- Certified enterprise distributions (QERRA Certified builds)
+- Institutional support & SLAs
 
-This layer is for institutional/high-stakes deployments and may be licensed in the future to support project growth, while the core stays open.
+This layer enables monetisation through reliability, validation, and integration — while the core ethical philosophy stays open.
 
-For more, see LICENSE and CONTRIBUTING.md.
+### Simple Diagram (Text-based)
