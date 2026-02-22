@@ -20,3 +20,12 @@ This layer remains free forever for anyone to use, modify, or fork.
 This layer enables monetisation through reliability, validation, and integration — while the core ethical philosophy stays open.
 
 ### Simple Diagram (Text-based)
+
+
+### Monetisation Note
+The ethical core and research layer stay fully open and free.  
+Monetisation happens only at the edge layer: enterprise support contracts, certified deployment packages, dual licensing for regulated/high-stakes environments, and optional paid integrations.  
+This preserves accessibility and mission integrity while allowing sustainability as the project scales.
+
+For more on contribution, see HOW_TO_CONTRIBUTE.md.
+For trademark, see README.md.
