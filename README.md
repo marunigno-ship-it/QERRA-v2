@@ -73,3 +73,8 @@ New module (`toxicity_manipulation_detector.py`) adds a global ethical penalty b
   detector = ToxicityManipulationDetector()
   detector.add_interaction("Speaker", "Input text here")
   penalty = detector.global_ethical_penalty()  # Apply: vector *= (1 - penalty)
+
+## Trademark Note
+"QERRA Certified" is a controlled mark for validated, high-reliability builds. Anyone can fork the code, but only official distributions carry the certified label.
+
+For more, see PROJECT_STRUCTURE.md.
