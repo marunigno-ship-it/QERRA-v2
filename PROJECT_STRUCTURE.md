@@ -19,6 +19,14 @@ This layer remains free forever for anyone to use, modify, or fork.
 
 This layer enables monetisation through reliability, validation, and integration — while the core ethical philosophy stays open.
 
+Deterministic Safety Architecture
+- Sensor Input → AI Inference (probabilistic LLM/quantum layer) → Safety Kernel (deterministic overrides) → Actuation.
+- Kernel Features: 
+  - Independent hard constraints (e.g., force/torque thresholds, emergency stops).
+  - Fail-safe under latency/noise (default to safe state).
+  - Override unsafe AI outputs (e.g., PEMEV ethical checks).
+- Implementation Plan: Code separation in Python (core open, edge protected).
+
 ### Simple Diagram (Text-based)
 
 
