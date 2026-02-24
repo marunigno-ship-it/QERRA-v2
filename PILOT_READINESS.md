@@ -17,11 +17,12 @@ QERRA-v2 Pilot & Governance Framework
 - Success metric: Validation report + feedback on PEMEV vectors
 
 4. Institutional Integration Path
-- Enterprise support: SLAs for high-reliability deployments
-- Certified packages: "QERRA Certified" for validated builds (auditability + compliance)
-- Integration toolkit: Adapters for regulated environments (e.g., ROS2 bridges)
-- Dual licensing: Optional for enterprise (core stays open Apache-2.0)
-- Principle: Monetize reliability/validation, not ethics – institutions pay for accountability/risk transfer
+- Enterprise Support: SLAs with defined parameters (e.g., override latency <50ms, stress-test coverage 90%).
+- Certified Packages: "QERRA Certified" builds with failure containment + reproducibility scores.
+- Integration Toolkit: ROS2 adapters with audit manifests.
+- Dual Licensing: Optional for enterprise (core open).
+- Liability Model: Warranties for certified builds; insurance-backed (buyer assumes post-deployment risk via SLAs).
+- Principle: Institutions pay for certifiable reliability/auditability, not ethics.
 
 - 5. Regulatory Mapping (EU AI Act + ISO 10218)
 - Risk Management: Continuous risk ID + mitigation (add Risk Registry YAML in repo).
