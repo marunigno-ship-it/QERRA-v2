@@ -1,14 +1,17 @@
-Pilot Readiness NoteGoal
+QERRA-v2 Pilot & Governance Framework (following M Z Nayan guidance)
 
-Start with small, safe, high-learning pilots that test QERRA-v2’s ethical core in real conditions without high risk.Recommended Pilot Filters  Bounded & Controlled Environment: University robotics labs, industrial testbeds, or regulated AI sandboxes.  
-Clear Safety & Compliance Focus: Partners who already publish safety policies or work under ethical/regulatory frameworks.  
-Fast Feedback & Co-Shaping: Partners willing to iterate quickly and actively help improve the system.  
-Low Initial Risk: Start with non-critical applications (internal lab testing, simulation-to-real transfer).
+1. Pilot Profile – 3 Filters
+• Bounded environment (lab / testbed / sandbox only)
+• Clear risk exposure (safety, reliability, compliance matter)
+• Fast feedback loop (partner willing to iterate)
 
-Governance Basics (Keep Simple)  Define who approves edge module releases (decision rights)  
-Document key risk assumptions and mitigations  
-Maintain clear separation between open research core and deployable builds  
-Simple contribution review process
+2. Governance Basics
+• Defined release authority (solo founder approves Edge modules)
+• Documented risk assumptions (ethical vectors always open)
+• Clear separation (research core open, deployment edge protected)
+• Simple contribution review process (via CLA)
 
-This approach builds credibility and momentum through small, controlled wins.For more details, see PROJECT_STRUCTURE.md and CONTRIBUTING_GUIDE.md.Paste the entire text above into the GitHub file editor.  
-
+3. First Pilot Target Profile
+Sector: Humanoid robotics / industrial automation testbeds
+Focus: Ethical decision engine stress-test in controlled human-robot collaboration
+Success metric: Validation report + feedback on PEMEV vectors
