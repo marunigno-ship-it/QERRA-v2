@@ -22,3 +22,16 @@ QERRA-v2 Pilot & Governance Framework
 - Integration toolkit: Adapters for regulated environments (e.g., ROS2 bridges)
 - Dual licensing: Optional for enterprise (core stays open Apache-2.0)
 - Principle: Monetize reliability/validation, not ethics – institutions pay for accountability/risk transfer
+
+- 5. Regulatory Mapping (EU AI Act + ISO 10218)
+- Risk Management: Continuous risk ID + mitigation (add Risk Registry YAML in repo).
+- Data Governance: Track PEMEV vectors + data lineage (log dataset hashes).
+- Technical Docs: Auto-gen architecture reports per build.
+- Logging: Immutable event traces (input → inference → override → output).
+- Human Oversight: Override/halt mechanisms (safety kernel).
+- Robustness: Performance metrics + stress-tests (latency <50ms overrides).
+- Protective Measures: Emergency stops + force limits (hard-coded constraints).
+- Hazard Reduction: Map hazards to enforcement modules.
+- Human-Robot Controls: Safe speed/force monitoring (deterministic checks).
+
+These align QERRA-v2 with high-risk AI/robotics standards for safe deployments.
