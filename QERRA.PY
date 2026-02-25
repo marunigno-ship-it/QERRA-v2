@@ -3,6 +3,8 @@ from qutip import *
 from scipy.optimize import minimize
 import requests  # For fetching quantum randomness
 import hashlib   # Extra security (optional but good)
+from safety_kernel import safety_kernel
+
 
 def get_quantum_seed():
     try:
@@ -19,6 +21,10 @@ def get_quantum_seed():
         # If internet issue, fallback to old fake seed
         print("No connection—using fake seed for now")
         return 42
+
+thresholds = {'latency_ms': 50}
+safe_output = safety_kernel(ai_decision, thresholds, region='UAE')   # change to 'EU' or 'USA' anytime
+final_action = safe_output.get('action', ai_decision.get('action'))
 
 
 # QERRA: Quantum Ethical Rescue Resource Allocator by Marussa Metocharaki (@marunigno), aided by Grok (xAI)
