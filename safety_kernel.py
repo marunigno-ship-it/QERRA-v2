@@ -1,4 +1,4 @@
-# safety_kernel.py - Modular deterministic safety for QERRA-v2 (Nayan PDF)
+# safety_kernel.py - Modular deterministic safety for QERRA-v2 
 # Call example: safe = safety_kernel(ai_output, thresholds, region='UAE')
 
 import time
