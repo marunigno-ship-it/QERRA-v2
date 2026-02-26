@@ -59,19 +59,7 @@ git clone https://github.com/marunigno-ship-it/QERRA-v2.git
 cd QERRA-v2
 pip install -r requirements.txt
 
-### Toxicity & Manipulation Detector Module
 
-New module (`toxicity_manipulation_detector.py`) adds a global ethical penalty based on interaction behavior.
-
-- **Purpose**: Detects toxicity, deception, and inconsistency (e.g., shifting narratives/manipulation) from text/speech input.
-- **Scientific basis**: Multilingual Detoxify model (fine-tuned BERT for toxicity classification, 90%+ accuracy on benchmarks) + RoBERTa deception classifier + variance for multi-turn inconsistency.
-- **Integration**: Global penalty (0-1) scales down trust across **all ethical vectors** (first 8 + SEMEV-12 + others) — prevents poisonous/malicious input from drifting decisions in humanoid systems.
-- **Usage**:
-  ```python
-  from toxicity_manipulation_detector import ToxicityManipulationDetector
-
-  detector = ToxicityManipulationDetector()
-  detector.add_interaction("Speaker", "Input text here")
   penalty = detector.global_ethical_penalty()  # Apply: vector *= (1 - penalty)
 
 ## Trademark Note
