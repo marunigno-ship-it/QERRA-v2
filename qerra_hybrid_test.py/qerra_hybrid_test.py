@@ -1,4 +1,17 @@
-# qerra_hybrid_test.py - Full hybrid quantum-classical test with safety kernel (Nayan PDF)
+# qerra_hybrid_test.py
+# Copyright (c) 2025-2026 Marussa Metocharaki (@marunigno) - Greece
+# All rights reserved.
+#
+# This file is part of QERRA-v2 and is licensed under the
+# GNU Affero General Public License v3.0 (AGPL-3.0)
+# Full license: https://github.com/marunigno-ship-it/QERRA-v2/blob/main/LICENSE
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+
+
+
+
+
 # Fixed noise model – uses depolarizing_error for IBM sim
 
 import time
