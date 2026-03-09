@@ -1,8 +1,11 @@
 # QERRA-v2 Project Structure
 
 To preserve the ethical mission while enabling future sustainability and institutional adoption, the project is divided into two clear layers:
+Core Layer (Fully Open-Source – AGPL-3.0)
 
-## Core Layer (Fully Open-Source – Apache-2.0)
+
+
+
 - Ethical vectors (SEMEV-12, PEMEV-11, SEEV-12, etc.)
 - Research algorithms & simulations (quantum entanglement, randomness seeding, toxicity detection)
 - Basic classical/hybrid demos and documentation
