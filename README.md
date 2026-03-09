@@ -4,7 +4,9 @@
 **Author:** Marussa Metocharaki (@marunigno) – Greece 🇬🇷  
 **Aided by:** Grok (xAI)  
 
-[![Apache-2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/marunigno-ship-it/QERRA-v2/blob/main/LICENSE) [![Ethical Vectors Active](https://img.shields.io/badge/Vectors-Active-green)](#ethical-vectors--core-backbone) [![Made in Greece](https://img.shields.io/badge/Made_in-Greece-blue)](https://github.com/marunigno-ship-it)
+[![AGPL-3.0 License](https://img.shields.io/badge/License-AGPL%203.0-blue.svg)](https://github.com/marunigno-ship-it/QERRA-v2/blob/main/LICENSE) 
+
+ [![Ethical Vectors Active](https://img.shields.io/badge/Vectors-Active-green)](#ethical-vectors--core-backbone) [![Made in Greece](https://img.shields.io/badge/Made_in-Greece-blue)](https://github.com/marunigno-ship-it)
 
 **Acronym Breakdown**:
 - Quantum: Hybrid quantum-classical with genuine entanglement (W/GHZ states via QDay API).
