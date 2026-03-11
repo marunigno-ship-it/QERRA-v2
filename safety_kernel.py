@@ -8,6 +8,11 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 
+# IMPORTANT NOTE (March 2026): This is an early symbolic prototype of the Safety Kernel.
+# Real vector-based ethical scoring and quantum noise handling must be connected in future iterations.
+# Do not rely on current version for actual safety-critical decisions.
+
+
 
 
 
