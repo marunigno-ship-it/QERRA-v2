@@ -1,42 +1,31 @@
-# QERRA-v2 Project Structure
+QERRA-v2 Project Structure
 
-To preserve the ethical mission while enabling future sustainability and institutional adoption, the project is divided into two clear layers:
-Core Layer (Fully Open-Source – AGPL-3.0)
+The QERRA-v2 project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
 
+Author: MAROUSO METOCHARAKI
 
+QERRA is a hybrid quantum-classical decision engine that integrates quantum entanglement principles with strict ethical frameworks for responsible AI and humanoid robotics.
 
-
-- Ethical vectors (SEMEV-12, PEMEV-11, SEEV-12, etc.)
-- Research algorithms & simulations (quantum entanglement, randomness seeding, toxicity detection)
-- Basic classical/hybrid demos and documentation
-- Governance logic and philosophical foundation
-
-This layer remains free forever for anyone to use, modify, or fork.
-
-## Edge Layer (Potential Future Licensable / Commercial)
-- Deployment adapters (e.g., hardened ROS2 integrations, real-time control bridges)
-- High-reliability modules (error mitigation, fail-safe recovery)
-- Security, compliance, and audit tooling
-- Certified enterprise distributions (QERRA Certified builds)
-- Institutional support & SLAs
-
-This layer enables monetisation through reliability, validation, and integration — while the core ethical philosophy stays open.
+Core Components
+- Ethical vector systems (SEMEV-12, PEMEV-11 and related modules)
+- Quantum state simulation and hybrid quantum-classical algorithms
+- Safety and toxicity detection mechanisms
+- Deterministic governance and override systems
+- Supporting documentation and testing infrastructure
 
 Deterministic Safety Architecture
-- Sensor Input → AI Inference (probabilistic LLM/quantum layer) → Safety Kernel (deterministic overrides) → Actuation.
-- Kernel Features: 
-  - Independent hard constraints (e.g., force/torque thresholds, emergency stops).
-  - Fail-safe under latency/noise (default to safe state).
-  - Override unsafe AI outputs (e.g., PEMEV ethical checks).
-- Implementation Plan: Code separation in Python (core open, edge protected).
 
-### Simple Diagram (Text-based)
+Sensor Input → Quantum-Classical Reasoning Layer → Safety Kernel → Final Actuation
+
+The Safety Kernel functions as the final deterministic authority, enforcing hard ethical constraints and preventing unsafe or misaligned outputs.
+
+Key Core Files
+- safety_kernel.py
+- toxicity_manipulation_detector.py
+- qerra.py
+- qreav_vector.py
+- qerra_hybrid_test.py
+
+This structure provides a clean and well-organized foundation for the high-quality Minimum Viable Product (MVP) while fully preserving the original quantum-ethical vision.
 
 
-### Monetisation Note
-The ethical core and research layer stay fully open and free.  
-Monetisation happens only at the edge layer: enterprise support contracts, certified deployment packages, dual licensing for regulated/high-stakes environments, and optional paid integrations.  
-This preserves accessibility and mission integrity while allowing sustainability as the project scales.
-
-For more on contribution, see HOW_TO_CONTRIBUTE.md.
-For trademark, see README.md.
