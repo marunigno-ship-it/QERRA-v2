@@ -27,6 +27,7 @@ Contact for private access or questions.
 
 ### Demo Video
 Watch the full console run of MVP v1.0 (quantum sim + ethical flow + kernel decision):  
-[View Demo Video] https://drive.google.com/file/d/1mxxYSGy2kusVocpIgHCVI1DULQb-VaAw/view?usp=sharing
+[View Demo Video] https://drive.google.com/file/d/1lXqZWeN1Uh9tROrPTkcL-a2B6kOSTjl5/view?usp=drive_link
+https://drive.google.com/file/d/1kSQwyDxGVU4O5-Y-CHW6myhr8NYp3lto/view?usp=drive_link
 
 Video shows end-to-end execution (exit code 0, EU compliant pass).
