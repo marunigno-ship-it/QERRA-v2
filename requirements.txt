@@ -1,5 +1,18 @@
+# QERRA-v2 Dependencies
+# Updated Day 5 - 28 March 2026
+
+# Core scientific computing
+numpy>=1.24.0
+
+# Quantum simulation (modern Qiskit)
 qiskit>=1.0.0
-qiskit-ibm-provider
-qiskit[visualization]
-numpy
-matplotlib  # if you use plots
+qiskit-aer>=0.14.0
+
+# For robust path handling and JSON
+# (already included in Python standard library, but listed for clarity)
+
+# Optional: For future ROS2 integration (stub only)
+# rclpy  # Uncomment only when ROS2 is installed locally
+
+# Development & Testing
+pytest>=7.0.0
