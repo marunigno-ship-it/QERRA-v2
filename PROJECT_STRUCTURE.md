@@ -1,27 +1,30 @@
 # QERRA-v2 Project Structure
 
+## Current Status (28 March 2026)
+This is a solo-developed MVP. The project is kept in a simple root-based structure.
+
 ## Root Files
-- `README.md` — Main project overview and quick start
-- `requirements.txt` — Dependencies
-- `qerra.py` — Main entry point (imports from src package)
+- `README.md` — Main project overview
+- `LICENSE` — AGPL-3.0 license
+- `requirements.txt` — Python dependencies
+- `qerra.py` — Main decision engine (QERRA_DecisionEngine)
 - `PROJECT_STRUCTURE.md` — This file
-- `DEMO-README.md` — Demo instructions (if exists)
+- `DEMO-README.md` — Demo instructions
+- `MVP_v1.0_DEMO.txt` — MVP demo notes
 
-## Source Code
-- `src/qerra/` — Main Python package
-  - `__init__.py` — Package initialization
-  - `core.py` — Core decision engine (`QERRA_DecisionEngine`)
+## Core Code Files
+- `qreav_vector.py` — Quantum-resistant ethical access vector
+- `safety_kernel.py` — Safety override kernel (region modes: EU, USA, UAE)
+- `toxicity_manipulation_detector.py` — Toxicity and manipulation detection
 
-## Supporting Folders
-- `vectors/` — Real-life ethical vectors (SEMEV-12 and others) — **core intellectual property**
+## Important Folders
+- `vectors/` — Real-life based ethical vectors (SEMEV-12 and others) — core intellectual property
 - `tests/` — Automated tests
-- `ros2_stub/` — ROS2 integration placeholders
-- `docs/` — Additional documentation (can be expanded)
+- `ros2_stub/` — ROS2 integration placeholders (future humanoid robot support)
 
-## Purpose of Structure
-This layout follows modern Python packaging standards:
-- `src/` layout keeps source code clean and importable
-- Easy to install as a package in the future
-- Clear separation between core code, data (vectors), and tests
+## Purpose
+Simple and transparent structure that shows the real development path.  
+No complex packaging or src layout — everything important is easy to find in the root.
 
-Last updated: 28 March 2026 (Day 9 of repository cleanup)
+Last updated: 28 March 2026
+
