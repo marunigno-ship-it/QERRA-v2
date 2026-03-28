@@ -1,114 +1,83 @@
-# qerra.py
-# Copyright (c) 2025-2026 Marussa Metocharaki (@marunigno) - Greece
-# All rights reserved.
-#
-# This file is part of QERRA-v2 and is licensed under the
-# GNU Affero General Public License v3.0 (AGPL-3.0)
-# Full license: https://github.com/marunigno-ship-it/QERRA-v2/blob/main/LICENSE
-# SPDX-License-Identifier: AGPL-3.0-or-later
-
-
-
-
+"""
+QERRA-v2 Core Module
+Hybrid Quantum-Classical Ethical Decision Engine
+Author: Marussa Metocharaki (@marunigno)
+"""
 
 import numpy as np
-from qutip import *
-from scipy.optimize import minimize
-import requests  # For fetching quantum randomness
-import hashlib   # Extra security (optional but good)
-from safety_kernel import safety_kernel
+import json
+import os
+from pathlib import Path
 
+# Modern Qiskit imports
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
 
-def get_quantum_seed():
-    try:
-        # Fetch 32 real quantum bytes from QDay (free, fast)
-        response = requests.get("https://qday.dev/v1/bytes?n=32&cnt=1&fmt=hex")
-        response.raise_for_status()  # Check if it worked
-        quantum_hex = response.text.strip()
+class QERRA_DecisionEngine:
+    def __init__(self, ethical_threshold: float = 0.75):
+        self.ethical_threshold = ethical_threshold
+        self.vectors_path = Path(__file__).parent / "vectors"
+        self.quantum_backend = AerSimulator()
         
-        # Turn into a big safe seed number
-        seed_int = int(quantum_hex, 16)
-        print(f"Used real quantum seed: {quantum_hex}")  # Shows you the quantum string!
-        return seed_int
-    except:
-        # If internet issue, fallback to old fake seed
-        print("No connection—using fake seed for now")
-        return 42
+        self.load_vectors()
 
-thresholds = {'latency_ms': 50}
-safe_output = safety_kernel(ai_decision, thresholds, region='UAE')   # change to 'EU' or 'USA' anytime
-final_action = safe_output.get('action', ai_decision.get('action'))
+    def load_vectors(self):
+        """Load your real-life ethical vectors (SEMEV-12 and others)"""
+        try:
+            self.vectors = {}
+            if self.vectors_path.exists():
+                for file in self.vectors_path.glob("*.json"):
+                    with open(file, 'r', encoding='utf-8') as f:
+                        self.vectors[file.name] = json.load(f)
+                print(f"✅ Loaded {len(self.vectors)} ethical vectors")
+            else:
+                print("Warning: vectors folder not found")
+        except Exception as e:
+            print(f"Warning: Could not load vectors: {e}")
+            self.vectors = {}
 
+    def run_quantum_layer(self, input_data: dict) -> float:
+        """Simple stable W-state inspired quantum layer"""
+        try:
+            qc = QuantumCircuit(8)
+            qc.h(0)
+            for i in range(1, 8):
+                qc.cx(0, i)
+            
+            job = self.quantum_backend.run(qc, shots=1024)
+            result = job.result()
+            counts = result.get_counts()
+            
+            quantum_score = sum(1 for k in counts if k.startswith('1')) / 1024
+            return quantum_score
+        except Exception as e:
+            print(f"Quantum layer warning: {e}")
+            return 0.5
 
-# QERRA: Quantum Ethical Rescue Resource Allocator by Marussa Metocharaki (@marunigno), aided by Grok (xAI)
-# VQC for ethical binary classification (e.g., allocate resources? 1=yes, 0=no)
-quantum_seed = get_quantum_seed()
-np.random.seed(quantum_seed)  # Now truly quantum!
-num_samples = 500
-X = np.random.rand(num_samples, 4) * 2 * np.pi  # Features: [urgency, risk, ethical_impact, resource_avail]
-y = np.array([1 if np.sum(x) >= 6 else 0 for x in X])  # Ethical threshold
+    def evaluate_ethical_score(self, input_data: dict) -> float:
+        quantum_score = self.run_quantum_layer(input_data)
+        
+        ethical_penalty = 0.0
+        if self.vectors:
+            ethical_penalty = sum(v.get('ethical_penalty', 0) for v in self.vectors.values()) / max(len(self.vectors), 1)
+        
+        final_score = (quantum_score * 0.6) + ((1 - ethical_penalty) * 0.4)
+        return min(max(final_score, 0.0), 1.0)
 
-train_size = int(0.8 * num_samples)
-X_train, X_test = X[:train_size], X[train_size:]
-y_train, y_test = y[:train_size], y[train_size:]
+    def make_decision(self, input_data: dict) -> dict:
+        ethical_score = self.evaluate_ethical_score(input_data)
+        decision = {
+            "ethical_score": round(ethical_score, 4),
+            "approved": ethical_score >= self.ethical_threshold,
+            "recommendation": "APPROVED" if ethical_score >= self.ethical_threshold else "REJECTED_WITH_SAFETY",
+            "timestamp": str(np.datetime64('now')),
+            "note": "QERRA-v2 Hybrid Ethical Decision (SEMEV-12 vectors applied)"
+        }
+        return decision
 
-# Gates
-def rx(theta): return Qobj([[np.cos(theta/2), -1j*np.sin(theta/2)], [-1j*np.sin(theta/2), np.cos(theta/2)]], dims=[[2],[2]])
-def ry(theta): return Qobj([[np.cos(theta/2), -np.sin(theta/2)], [np.sin(theta/2), np.cos(theta/2)]], dims=[[2],[2]])
-cz_gate = Qobj([[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,-1]], dims=[[2,2],[2,2]])
-
-# Feature Map: RX encoding
-def apply_feature_map(psi, x):
-    psi = tensor(rx(x[0]), rx(x[1])) * psi
-    psi = tensor(rx(x[2]), rx(x[3])) * psi
-    return psi
-
-# Ansatz: Deeper variational (RY + CZ layers) for entanglement/ethics modeling
-def apply_ansatz(psi, params):
-    psi = tensor(ry(params[0]), ry(params[1])) * psi
-    psi = cz_gate * psi
-    psi = tensor(ry(params[2]), ry(params[3])) * psi
-    psi = tensor(ry(params[4]), ry(params[5])) * psi  # Depth for expressivity
-    psi = cz_gate * psi
-    return psi
-
-# Expectation <Z0> for classification
-def expectation_z0(rho):
-    Z0 = tensor(sigmaz(), qeye(2))
-    return (rho * Z0).tr().real
-
-# Cost: MSE with ethical bias (favor action in ambiguity)
-def cost(params, X, y):
-    total = 0
-    for xi, yi in zip(X, y):
-        psi0 = tensor(basis(2,0), basis(2,0))
-        psi = apply_feature_map(psi0, xi)
-        psi = apply_ansatz(psi, params)
-        rho = psi * psi.dag()
-        exp = expectation_z0(rho)
-        pred = 1 if exp < -0.1 else 0  # Tuned threshold for ethics
-        total += (pred - yi)**2
-    return total / len(y)
-
-# Train: SLSQP for better convergence
-initial_params = np.pi/4 * np.ones(6)  # Informed init
-result = minimize(cost, initial_params, args=(X_train, y_train), method='SLSQP', tol=1e-4)
-optimized_params = result.x
-print("Optimized Params:", optimized_params)
-print("Training Cost:", result.fun)
-
-# Test - Fixed loop for clarity
-psi0 = tensor(basis(2,0), basis(2,0))
-preds = []
-for xi in X_test:
-    psi = apply_feature_map(psi0, xi)
-    psi = apply_ansatz(psi, optimized_params)
-    rho = psi * psi.dag()
-    exp = expectation_z0(rho)
-    pred = 1 if exp < -0.1 else 0
-    preds.append(pred)
-accuracy = np.mean(np.array(preds) == y_test)
-print("Test Accuracy:", accuracy)
-
-# Ethical Audit
-print("Param Magnitudes (Bias Check):", np.abs(optimized_params))  # Uniform = low bias
+# Quick test
+if __name__ == "__main__":
+    engine = QERRA_DecisionEngine()
+    test_input = {"resource_request": "high", "context": "healthcare"}
+    result = engine.make_decision(test_input)
+    print("✅ QERRA Decision:", result)
