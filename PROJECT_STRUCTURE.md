@@ -1,22 +1,27 @@
 # QERRA-v2 Project Structure
 
-## Overview
-QERRA-v2 is a hybrid quantum-classical ethical decision engine designed for safe, interpretable decision-making in humanoid robots and high-stakes AI systems.
+## Root Files
+- `README.md` — Main project overview and quick start
+- `requirements.txt` — Dependencies
+- `qerra.py` — Main entry point (imports from src package)
+- `PROJECT_STRUCTURE.md` — This file
+- `DEMO-README.md` — Demo instructions (if exists)
 
-## Core Files
-- `qerra.py` → Main Decision Engine (QERRA_DecisionEngine class)
-- `qreav_vector.py` → Quantum-resistant ethical access vector
-- `safety_kernel.py` → Final safety override layer
-- `toxicity_manipulation_detector.py` → Real-time toxicity and manipulation detection
-- `requirements.txt` → All dependencies
+## Source Code
+- `src/qerra/` — Main Python package
+  - `__init__.py` — Package initialization
+  - `core.py` — Core decision engine (`QERRA_DecisionEngine`)
 
-## Folders
-- `vectors/` → Real-life based ethical vectors (SEMEV-12 and others)
-- `tests/` → Automated tests
-- `docs/` → Documentation
-- `src/` → Future modular source (placeholder)
+## Supporting Folders
+- `vectors/` — Real-life ethical vectors (SEMEV-12 and others) — **core intellectual property**
+- `tests/` — Automated tests
+- `ros2_stub/` — ROS2 integration placeholders
+- `docs/` — Additional documentation (can be expanded)
 
-## Quick Start
-```bash
-pip install -r requirements.txt
-python qerra.py
+## Purpose of Structure
+This layout follows modern Python packaging standards:
+- `src/` layout keeps source code clean and importable
+- Easy to install as a package in the future
+- Clear separation between core code, data (vectors), and tests
+
+Last updated: 28 March 2026 (Day 9 of repository cleanup)
