@@ -19,7 +19,8 @@ class QERRA_DecisionEngine:
         self.quantum_backend = AerSimulator()
         self.load_vectors()
 
-    def load_vectors(self):
+        def load_vectors(self):
+        """Load your real-life ethical vectors (SEMEV-12 and others)"""
         try:
             self.vectors = {}
             if self.vectors_path.exists():
@@ -32,6 +33,7 @@ class QERRA_DecisionEngine:
         except Exception as e:
             print(f"Warning: Could not load vectors: {e}")
             self.vectors = {}
+            # Fallback: create empty dict so the engine still runs
 
     def run_quantum_layer(self, input_data: dict) -> float:
         try:
