@@ -30,4 +30,3 @@ flowchart TD
     D --> E[Safety Kernel<br>Region-aware override]
     E --> F[Final Decision + Explanation]
     F --> G[Output: Robot action / Safe state]
-
