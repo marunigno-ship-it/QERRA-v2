@@ -37,4 +37,20 @@ Early real-life based implementation (March 2026). Full mathematical validation 
 5. Safety Kernel (final override)  
 6. Output (approved decision + explanation)
 
+ ## 3. Example of Ethical Vector Application
+
+**Input Example (realistic scenario):**
+A robot must decide whether to allocate limited medical supplies during an emergency.
+
+```python
+ethical_vector = [0.9, 0.7, 0.85, 0.6, 0.8, 0.75, 0.9, 0.65, 0.85, 0.7, 0.8, 0.75]  # SEMEV-12 scores
+
+total_score = sum(ethical_vector) / 12
+print(f"Ethical score: {total_score:.3f}")
+
+if total_score >= 0.75:
+    print("Decision: APPROVED")
+else:
+    print("Decision: REJECTED_WITH_SAFETY")
+
 Last updated: 30 March 2026
