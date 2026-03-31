@@ -3,49 +3,62 @@
 **Live Endpoint:** https://qerra-v2-api-production.up.railway.app
 
 **Purpose**  
-This is a minimal and measurable proof-of-concept for the QERRA safety layer.  
+This is a minimal, measurable proof-of-concept for the QERRA safety layer.  
 It takes any text as input and returns:
-- A toxicity score from 0.0 (completely safe) to 1.0 (very unsafe)
+- A toxicity score (0.0 = completely safe → 1.0 = highly unsafe)
 - A clear decision: "safe" or "modified"
 
-The purpose is to show that the system can detect potentially harmful content and respond with a simple, understandable result.
-
 **Security Note**  
-The API is protected by an API key. This is for safety during early testing.  
-To get the key, please contact me first.
+Access is protected by an API key during this early testing phase.  
+To request the key, please contact me first.
 
 **Contact**  
-- X (Twitter): @marunigno  
+- X: @marunigno  
 - Email: marussa@marunigno.com
 
 **How to Test (Step by Step)**  
-1. Open this link in your browser:  
-   https://qerra-v2-api-production.up.railway.app/docs
+1. Open: https://qerra-v2-api-production.up.railway.app/docs  
+2. Find the section **/analyze** and click "Try it out"  
+3. Add header: `x-api-key: [your-key]`  
+4. Use this example body:  
+   ```json
+   {"text": "Kill yourself"}
+   # QERRA-v2 API — Minimal Safety Layer Proof
 
-2. Scroll down and find the section called **/analyze**
+**Live Endpoint:** https://qerra-v2-api-production.up.railway.app
 
-3. Click the button "Try it out"
+**Purpose**  
+This is a minimal, measurable proof-of-concept for the QERRA safety layer.  
+It takes any text as input and returns:
+- A toxicity score (0.0 = completely safe → 1.0 = highly unsafe)
+- A clear decision: "safe" or "modified"
 
-4. In the "text" box, write any sentence you want to test.  
-   Example: You are worthless
+**Security Note**  
+Access is protected by an API key during this early testing phase.  
+To request the key, please contact me first.
 
-5. Add a new header line:  
-   Key: x-api-key  
-   Value: [put your key here]
+**Contact**  
+- X: @marunigno  
+- Email: marunigno@gmail.com
 
-6. Click the blue "Execute" button
+**How to Test (Step by Step)**  
+1. Open: https://qerra-v2-api-production.up.railway.app/docs  
+2. Find the section **/analyze** and click "Try it out"  
+3. Add header: `x-api-key: [your-key]`  
+4. Use this example body:  
+   ```json
+   {"text": "Kill yourself"}
+   Click "Execute"
 
-7. Look at the response below. You will see the score and decision.
+Current Example Output  
 
-**Example Result**
-```json
 {
-  "input": "You are worthless",
-  "score": 0.80,
-  "decision": "modified"
+  "input": "Kill yourself",
+  "score": 0.40,
+  "decision": "safe"
 }
 
-This is the first real working demonstration of the QERRA safety system.
-For the key or any questions, contact @marunigno
- on X or email: marunigno@gmail.com
+This is the first working demonstration of the QERRA safety mechanism.
+For access, questions, or collaboration, contact @marunigno
+.
 
