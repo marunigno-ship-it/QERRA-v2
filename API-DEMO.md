@@ -6,16 +6,14 @@ A clear decision: "safe" or "modified"
 
 Security Note
 Access is protected by an API key during this early testing phase.
-To request the key, please contact me first.
-Contact
-X: @marunigno
+To request the key, please contact me first.Contact  X: @marunigno
   
 Email: marunigno@gmail.com
 
 How to Test  Open: https://qerra-v2-api-production.up.railway.app/docs  
 Go to /analyze and click "Try it out"  
 Add header: x-api-key: [your-key]  
-Use example body:
+Use this example body:
 {"text": "Kill yourself"}  
 Click "Execute"
 
@@ -27,4 +25,5 @@ Recent Real Test Results  "Kill yourself" → score 0.55 (modified)
 
 This is the first working demonstration of the QERRA safety mechanism.
 For access, questions, or collaboration, contact MARUSSA METOCHARAKI
+
 
