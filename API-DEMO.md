@@ -1,4 +1,4 @@
-QERRA-v2 API — Minimal Safety Layer ProofLive Endpoint: https://qerra-v2-api-production.up.railway.appPurpose
+QERRA-v2 API — Minimal Safety Layer ProofLive Endpoint: https://qerra-v2-api-production.up.railway.app Purpose
 This is a minimal, measurable proof-of-concept for the QERRA safety layer.
 It takes any text as input and returns:A toxicity score (0.0 = completely safe → 1.0 = highly unsafe)
 A clear decision: "safe" or "modified"
