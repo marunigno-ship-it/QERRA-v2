@@ -1,0 +1,96 @@
+# QERRA-v2 Whitepaper
+
+**Quantum-Ethical Resource & Response Architecture for Safer Humanoid Robots and High-Stakes AI**
+
+**Author:** Marussa Metocharaki (@marunigno)  
+**Version:** 1.0  
+**Date:** April 2026  
+**License:** AGPL-3.0  
+
+## Abstract
+
+QERRA-v2 is an open-source hybrid quantum-classical ethical decision engine designed to bring stronger safety, transparency, and moral grounding to humanoid robots and high-stakes autonomous systems.  
+
+By combining quantum-inspired exploration (W-state superposition) with a classical ethical safety kernel and real-time toxicity/manipulation detection, QERRA-v2 aims to help AI systems make decisions that are not only fast and efficient but also ethically aligned. A live minimal safety layer is already operational via a public API endpoint that returns a toxicity score (0.0–1.0) and a clear decision (“safe” or “modified”).
+
+This whitepaper presents the project’s vision, architecture, current implementation, quantum foundation, and future roadmap. It is written for researchers, developers, robotics engineers, and potential supporters who want to understand the core idea and real progress made under solo development conditions.
+
+**Keywords:** Quantum AI, Ethical AI, AI Safety, Humanoid Robotics, Hybrid Quantum-Classical Systems, Post-Quantum Ethics, Toxicity Detection
+
+## 1. Introduction
+
+Humanoid robots and advanced AI are moving from laboratories into real-world deployment — disaster response, healthcare, elder care, and autonomous decision-making. As these systems gain more autonomy, the need for robust ethical guardrails becomes critical. Current safety approaches often focus on narrow alignment or simple content filtering, but they frequently lack depth, explainability, and the ability to handle complex moral trade-offs.
+
+QERRA-v2 addresses this gap by introducing a hybrid quantum-classical ethical decision layer. The system explores decision spaces using quantum superposition principles and then applies strict ethical filtering through the SEMEV-12 vector framework, a toxicity and manipulation detector, and a safety kernel with region-aware overrides.
+
+The project is developed entirely by one person under significant personal constraints, yet it already delivers a working live API and a verified 8-qubit W-state proof on real IBM quantum hardware. This whitepaper documents the current state and the long-term mission: building safer, more trustworthy AI for humanity’s most demanding applications.
+
+## 2. Project Vision and Mission
+
+QERRA-v2 exists to make high-stakes AI safer by design.  
+
+Our mission is to create an ethical decision engine that:
+- Prevents harmful or manipulative actions before they occur
+- Provides transparent reasoning for every decision
+- Remains compatible with current NISQ quantum hardware and classical systems
+- Evolves toward stronger quantum advantage as hardware improves
+
+We believe ethical safety should not be an afterthought — it must be a core architectural component. QERRA-v2 puts ethics at the center while maintaining performance and practicality.
+
+## 3. System Architecture
+
+The QERRA-v2 pipeline consists of the following layers:
+
+1. **Input Layer** – Accepts text, context, or decision proposals  
+2. **Quantum Exploration Layer** – Uses W-state superposition to explore multiple possible outcomes (currently simulated, with real 8-qubit hardware proof completed)  
+3. **Ethical Vector Layer (SEMEV-12)** – Applies 12 real-life-based ethical vectors for nuanced moral scoring  
+4. **Toxicity & Manipulation Detector** – Returns a continuous score (0.0–1.0) and preliminary decision  
+5. **Safety Kernel** – Final decision engine with region-aware override logic and explanation generation  
+6. **Output Layer** – Returns “safe” or “modified” along with score and reasoning
+
+A live implementation of the toxicity detector and safety kernel is running at the `/analyze` endpoint on Railway.
+
+For detailed component breakdown, see [ARCHITECTURE.md](ARCHITECTURE.md).  
+For live test results, see [API-DEMO.md](API-DEMO.md).
+
+## 4. Quantum Foundation
+
+A key differentiator of QERRA-v2 is the integration of quantum computing principles.  
+
+In January 2026, a real 8-qubit W-state was successfully executed on IBM quantum hardware (Job ID: 598eb802-0a56-428c-aec0-b23edca61e3c). The W-state provides equal superposition across all basis states, enabling uniform exploration of decision possibilities — a natural fit for ethical trade-off analysis.
+
+While the current live API uses classical simulation of the quantum layer for speed and reliability, the long-term goal is deeper integration with real quantum hardware as accessible qubits and coherence times improve.
+
+See the dedicated repository for the 8-qubit proof: [8qubit-wstate-qubs](https://github.com/marunigno-ship-it/8qubit-wstate-qubs)
+
+## 5. Current Implementation and Results
+
+- **Live API**: `/analyze` endpoint returns toxicity score + decision  
+- **Test Results** (April 2026): Harmful inputs correctly flagged (scores ~0.95), benign inputs remain safe (scores ~0.25)  
+- **Technology Stack**: Pure Python, Qiskit (for quantum parts), deployed on Railway Hobby plan  
+- **License**: AGPL-3.0 (ensures derivatives remain open and ethical)
+
+The system is functional today as a minimal viable safety layer and serves as a foundation for further development.
+
+## 6. Future Roadmap
+
+- Short term: Improve documentation, expand SEMEV-12 documentation, better integrate quantum layer  
+- Medium term: Enhanced ROS2 integration, more granular scoring, community contributions  
+- Long term: Real quantum hardware integration at scale, broader testing in simulated robotics environments, potential collaboration with AI safety and robotics organizations
+
+## 7. Call for Support
+
+QERRA-v2 is built by one person under financial hardship, health challenges, and isolation. Every contribution — whether code, feedback, documentation help, or financial support via GitHub Sponsors — helps sustain this long-term effort and brings us closer to safer AI systems.
+
+If you believe in ethical technology and the value of independent open-source work, please consider supporting the project through [GitHub Sponsors](https://github.com/sponsors/marunigno-ship-it).
+
+## Acknowledgments
+
+Thank you to everyone who believes in building AI with conscience.  
+Special thanks to the open-source community and quantum computing enthusiasts who make this kind of work possible.
+
+---
+
+**Marussa Metocharaki**  
+@marunigno  
+April 2026
