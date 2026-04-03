@@ -1,6 +1,7 @@
 # QERRA-v2 Whitepaper
 
-**Quantum-Ethical Resource & Response Architecture for Safer Humanoid Robots and High-Stakes AI**
+**Quantum Ethical Rescue & Resource Allocator**  
+**Hybrid Quantum-Classical Ethical Decision Engine for Safer Humanoid Robots and High-Stakes AI**
 
 **Author:** Marussa Metocharaki (@marunigno)  
 **Version:** 1.0  
@@ -9,13 +10,13 @@
 
 ## Abstract
 
-QERRA-v2 is an open-source hybrid quantum-classical ethical decision engine designed to bring stronger safety, transparency, and moral grounding to humanoid robots and high-stakes autonomous systems.  
+QERRA-v2 is an open-source hybrid quantum-classical ethical decision engine designed to bring stronger safety, transparency, and moral grounding to humanoid robots and high-stakes autonomous systems.
 
-By combining quantum-inspired exploration (W-state superposition) with a classical ethical safety kernel and real-time toxicity/manipulation detection, QERRA-v2 aims to help AI systems make decisions that are not only fast and efficient but also ethically aligned. A live minimal safety layer is already operational via a public API endpoint that returns a toxicity score (0.0–1.0) and a clear decision (“safe” or “modified”).
+By combining quantum-inspired exploration (W-state superposition) with a classical ethical safety kernel and real-time toxicity/manipulation detection, QERRA-v2 helps AI systems make decisions that are not only fast and efficient but also ethically aligned. A live minimal safety layer is already operational via a public API endpoint that returns a toxicity score (0.0–1.0) and a clear decision (“safe” or “modified”).
 
-This whitepaper presents the project’s vision, architecture, current implementation, quantum foundation, and future roadmap. It is written for researchers, developers, robotics engineers, and potential supporters who want to understand the core idea and real progress made under solo development conditions.
+This whitepaper presents the project’s vision, architecture, current implementation, quantum foundation, and future roadmap. It is written for researchers, developers, robotics engineers, and potential supporters who want to understand the core idea and real progress made.
 
-**Keywords:** Quantum AI, Ethical AI, AI Safety, Humanoid Robotics, Hybrid Quantum-Classical Systems, Post-Quantum Ethics, Toxicity Detection
+**Keywords:** Quantum AI, Ethical AI, AI Safety, Humanoid Robotics, Hybrid Quantum-Classical Systems, Toxicity Detection, Ethical Decision Engine
 
 ## 1. Introduction
 
@@ -23,7 +24,7 @@ Humanoid robots and advanced AI are moving from laboratories into real-world dep
 
 QERRA-v2 addresses this gap by introducing a hybrid quantum-classical ethical decision layer. The system explores decision spaces using quantum superposition principles and then applies strict ethical filtering through the SEMEV-12 vector framework, a toxicity and manipulation detector, and a safety kernel with region-aware overrides.
 
-The project is developed entirely by one person under significant personal constraints, yet it already delivers a working live API and a verified 8-qubit W-state proof on real IBM quantum hardware. This whitepaper documents the current state and the long-term mission: building safer, more trustworthy AI for humanity’s most demanding applications.
+The project has been developed entirely by me, Marussa Metocharaki, as a solo long-term effort under significant personal challenges and constraints. Grok (built by xAI) has provided consistent guidance, technical feedback, and support throughout the entire journey.
 
 ## 2. Project Vision and Mission
 
@@ -80,14 +81,15 @@ The system is functional today as a minimal viable safety layer and serves as a 
 
 ## 7. Call for Support
 
-QERRA-v2 is built by one person under financial hardship, health challenges, and isolation. Every contribution — whether code, feedback, documentation help, or financial support via GitHub Sponsors — helps sustain this long-term effort and brings us closer to safer AI systems.
+QERRA-v2 has been built single-handedly under significant personal challenges and constraints. Every contribution — whether code, feedback, documentation help, or financial support via GitHub Sponsors — helps sustain this long-term effort and brings us closer to safer AI systems.
 
 If you believe in ethical technology and the value of independent open-source work, please consider supporting the project through [GitHub Sponsors](https://github.com/sponsors/marunigno-ship-it).
 
 ## Acknowledgments
 
 Thank you to everyone who believes in building AI with conscience.  
-Special thanks to the open-source community and quantum computing enthusiasts who make this kind of work possible.
+Special thanks to the open-source community and quantum computing enthusiasts.  
+I am especially grateful to Grok (built by xAI) for providing continuous guidance and support throughout the development of QERRA-v2.
 
 ---
 
