@@ -28,15 +28,16 @@ The project has been developed entirely by me, Marussa Metocharaki, as a solo lo
 
 ## 2. Project Vision and Mission
 
-QERRA-v2 exists to make high-stakes AI safer by design.  
+QERRA-v2 was born from a deep personal conviction: high-stakes AI and humanoid robots must have ethics and safety as their foundation, not as an afterthought.
 
 Our mission is to create an ethical decision engine that:
-- Prevents harmful or manipulative actions before they occur
-- Provides transparent reasoning for every decision
-- Remains compatible with current NISQ quantum hardware and classical systems
-- Evolves toward stronger quantum advantage as hardware improves
 
-We believe ethical safety should not be an afterthought — it must be a core architectural component. QERRA-v2 puts ethics at the center while maintaining performance and practicality.
+- Prevents harmful or manipulative actions before they occur  
+- Provides transparent reasoning for every decision  
+- Remains compatible with today’s NISQ quantum hardware and classical systems  
+- Evolves toward stronger quantum advantage as hardware improves  
+
+We believe ethical safety is not a technical luxury — it is a moral necessity. QERRA-v2 puts human values and moral responsibility at the very heart of every decision, while still striving for speed, transparency, and real-world practicality.
 
 ## 3. System Architecture
 
