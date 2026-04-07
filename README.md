@@ -8,11 +8,12 @@ QERRA-v2 is an open-source project that combines quantum-inspired computing prin
 At its core, QERRA-v2 helps AI systems make faster, more transparent, and morally grounded decisions by exploring possibilities through W-state superposition and filtering them through strict ethical vectors (SEMEV-12), toxicity detection, and a safety kernel.
 
 ### Current Status
+The project is currently in an **early experimental stage**.
+
 - **Live API** available: `/analyze` endpoint returns a toxicity score (0.0–1.0) + decision ("safe" or "modified")
 - Real test results (April 2026) demonstrate effective handling of harmful vs. benign inputs
 - Successfully executed a real 8-qubit W-state on IBM quantum hardware (January 2026)
 - Fully open source under **AGPL-3.0**
-
 ### Why QERRA-v2 Matters
 In an era where humanoid robots are moving into real-world environments (disaster response, healthcare, autonomous operations), ethical safety must be a core architectural component — not an afterthought. QERRA-v2 aims to provide exactly that: a hybrid quantum-classical engine that prioritizes human values while maintaining performance.
 
