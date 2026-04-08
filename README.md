@@ -14,6 +14,15 @@ The project is currently in an **early experimental stage**.
 - Real test results (April 2026) demonstrate effective handling of harmful vs. benign inputs
 - Successfully executed a real 8-qubit W-state on IBM quantum hardware (January 2026)
 - Fully open source under **AGPL-3.0**
+
+- ### Live Demo
+
+Watch a short demo of the live API in action (April 2026):
+
+[▶ Watch API Demo] https://www.youtube.com/watch?v=RFLs6RlXpwk 
+
+The video shows the `/analyze` and `/quantum_analyze` endpoints with real test examples.
+
 ### Why QERRA-v2 Matters
 In an era where humanoid robots are moving into real-world environments (disaster response, healthcare, autonomous operations), ethical safety must be a core architectural component — not an afterthought. QERRA-v2 aims to provide exactly that: a hybrid quantum-classical engine that prioritizes human values while maintaining performance.
 
