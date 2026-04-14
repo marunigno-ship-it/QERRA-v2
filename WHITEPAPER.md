@@ -12,11 +12,9 @@
 
 QERRA-v2 is an open-source hybrid quantum-classical ethical decision engine designed to bring stronger safety, transparency, and moral grounding to humanoid robots and high-stakes autonomous systems.
 
-By combining quantum-inspired exploration (W-state superposition) with a classical ethical safety kernel and real-time toxicity/manipulation detection, QERRA-v2 helps AI systems make decisions that are not only fast and efficient but also ethically aligned. A live minimal safety layer is already operational via a public API endpoint that returns a toxicity score (0.0–1.0) and a clear decision (“safe” or “modified”).
+By combining quantum-inspired exploration (W-state superposition) with a classical ethical safety kernel and real-time toxicity/manipulation detection, QERRA-v2 aims to help AI systems make decisions that are not only fast and efficient but also more ethically considered. A live minimal safety layer is already operational via a public API endpoint that returns a toxicity score (0.0–1.0) and a clear decision (“safe” or “modified”).
 
-**Important note:** The quantum layer in the live API is currently simulated classically (see QUANTUM-STATUS.md for details). Real hardware execution has been demonstrated separately.
-
-This whitepaper presents the project’s vision, architecture, current implementation, quantum foundation, and future roadmap. It is written for researchers, developers, robotics engineers, and potential supporters who want to understand the core idea and real progress made.
+This whitepaper presents the project’s vision, architecture, current implementation, quantum foundation, and future roadmap. It is written for researchers, developers, robotics engineers, and potential supporters who want to understand the core idea and real progress made under solo development conditions.
 
 **Keywords:** Quantum AI, Ethical AI, AI Safety, Humanoid Robotics, Hybrid Quantum-Classical Systems, Toxicity Detection, Ethical Decision Engine
 
@@ -34,10 +32,10 @@ QERRA-v2 was born from a deep personal conviction: high-stakes AI and humanoid r
 
 Our mission is to create an ethical decision engine that:
 
-- Prevents harmful or manipulative actions before they occur  
-- Provides transparent reasoning for every decision  
-- Remains compatible with today’s NISQ quantum hardware and classical systems  
-- Evolves toward stronger quantum advantage as hardware improves  
+- Detects and flags potentially harmful or manipulative actions before they are acted upon
+- Provides transparent reasoning for every decision
+- Remains compatible with today’s NISQ quantum hardware and classical systems
+- Evolves toward stronger quantum advantage as hardware improves
 
 We believe ethical safety is not a technical luxury — it is a moral necessity. QERRA-v2 puts human values and moral responsibility at the very heart of every decision, while still striving for speed, transparency, and real-world practicality.
 
@@ -46,7 +44,7 @@ We believe ethical safety is not a technical luxury — it is a moral necessity.
 The QERRA-v2 pipeline consists of the following layers:
 
 1. **Input Layer** – Accepts text, context, or decision proposals  
-2. **Quantum Exploration Layer** – Uses W-state superposition to explore multiple possible outcomes (currently simulated classically — see QUANTUM-STATUS.md)  
+2. **Quantum Exploration Layer** – Uses W-state superposition to explore multiple possible outcomes (currently simulated, with real 8-qubit hardware proof completed)  
 3. **Ethical Vector Layer (SEMEV-12)** – Applies 12 real-life-based ethical vectors for nuanced moral scoring  
 4. **Toxicity & Manipulation Detector** – Returns a continuous score (0.0–1.0) and preliminary decision  
 5. **Safety Kernel** – Final decision engine with region-aware override logic and explanation generation  
@@ -61,9 +59,9 @@ For live test results, see [API-DEMO.md](API-DEMO.md).
 
 A key differentiator of QERRA-v2 is the integration of quantum computing principles.  
 
-In January 2026, a real 8-qubit W-state was successfully executed on real IBM quantum hardware (Job ID: 598eb802-0a56-428c-aec0-b23edca61e3c). The W-state provides equal superposition across all basis states, enabling uniform exploration of decision possibilities — a natural fit for ethical trade-off analysis.
+In January 2026, a real 8-qubit W-state was successfully executed on IBM quantum hardware (Job ID: 598eb802-0a56-428c-aec0-b23edca61e3c). The W-state provides equal superposition across all basis states, enabling uniform exploration of decision possibilities — a natural fit for ethical trade-off analysis.
 
-While the current live API uses classical simulation of the quantum layer for speed and reliability **(currently simulated classically — see QUANTUM-STATUS.md)**, the long-term goal is deeper integration with real quantum hardware as accessible qubits and coherence times improve.
+While the current live API uses classical simulation of the quantum layer for speed and reliability, the long-term goal is deeper integration with real quantum hardware as accessible qubits and coherence times improve.
 
 See the dedicated repository for the 8-qubit proof: [8qubit-wstate-qubs](https://github.com/marunigno-ship-it/8qubit-wstate-qubs)
 
@@ -71,10 +69,22 @@ See the dedicated repository for the 8-qubit proof: [8qubit-wstate-qubs](https:/
 
 - **Live API**: `/analyze` endpoint returns toxicity score + decision  
 - **Test Results** (April 2026): Harmful inputs correctly flagged (scores ~0.95), benign inputs remain safe (scores ~0.25)  
-- **Technology Stack**: Pure Python, Qiskit (for quantum parts), deployed on Railway  
+- **Technology Stack**: Pure Python, Qiskit (for quantum parts), deployed on Railway Pro  
 - **License**: AGPL-3.0 (ensures derivatives remain open and ethical)
 
 The system is functional today as a minimal viable safety layer and serves as a foundation for further development.
+
+## Scope and Current Limitations
+
+What this is not (important clarification):
+
+- The system is not currently integrated with any robotic hardware or real-world robots.
+- The quantum layer is not yet running in the live API (it is simulated for speed and reliability).
+- The SEMEV-12 ethical vectors are an early heuristic implementation and have not been independently validated.
+- The system has not been tested on non-English inputs or highly complex real-world scenarios.
+- This is an early experimental prototype and should not be used for safety-critical decisions without further development and validation.
+
+We believe in transparency: the current version demonstrates the core idea, but significant work remains before it can be considered production-ready.
 
 ## 6. Future Roadmap
 
