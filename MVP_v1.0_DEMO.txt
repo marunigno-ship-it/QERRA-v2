@@ -12,3 +12,4 @@ Current status:
 The hybrid quantum-classical engine with SEMEV-12 ethical vectors is running locally.
 
 GitHub: https://github.com/marunigno-ship-it/QERRA-v2
+
