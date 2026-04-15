@@ -17,9 +17,11 @@ from typing import Dict
 def safety_kernel(ai_output: Dict, thresholds: Dict, region: str = 'UAE'):
     """Deterministic override kernel with region modes"""
     
-    # Common PEMEV ethical check (all regions)
-    if sum(ai_output.get('pemev_vectors', [0])) <= 0:
-        return {'action': 'safe_state', 'reason': 'PEMEV ethical violation'}
+    # Common SEMEV-12 ethical check (all regions)
+    # NOTE: Previously used 'pemev_vectors' — renamed to 'semev_vectors' for consistency
+    # with Whitepaper and architecture documentation.
+    if sum(ai_output.get('semev_vectors', [0])) <= 0:
+        return {'action': 'safe_state', 'reason': 'SEMEV-12 ethical violation'}
 
     start = time.time()
 
