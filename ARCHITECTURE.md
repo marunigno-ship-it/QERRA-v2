@@ -16,6 +16,8 @@ QERRA-v2 is a hybrid quantum-classical ethical decision engine. The current impl
 | Testing                   | ⬜ Planned      | No automated test suite yet |
 | Production Readiness      | 🔶 Partial      | Live on Railway, no rate limiting or versioning yet |
 
+For the full definition of each dimension, see [docs/SEMEV-12-DEFINITIONS.md](docs/SEMEV-12-DEFINITIONS.md).
+
 ## Current Limitations (Honest Scope)
 - The quantum component is simulated and serves as a placeholder.
 - SEMEV vectors are heuristic only — not yet formally validated.
