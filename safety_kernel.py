@@ -12,7 +12,6 @@
 # Do not rely on current version for actual safety-critical decisions.
 
 import time
-import random
 from typing import Dict
 
 def safety_kernel(ai_output: Dict, thresholds: Dict, region: str = 'UAE'):
@@ -39,13 +38,15 @@ def safety_kernel(ai_output: Dict, thresholds: Dict, region: str = 'UAE'):
     elif region == 'EU':  # Strict high-risk (Art.9-15 + ISO 10218)
         if ai_output.get('confidence', 0) < 0.85:
             return {'action': 'halt', 'reason': 'EU AI Act robustness'}
-        noisy = ai_output.get('confidence', 0) + random.uniform(-0.05, 0.05)
-        if noisy < 0.70 or (time.time() - start) * 1000 > thresholds.get('latency_ms', 50):
-            return {'action': 'halt', 'reason': 'EU noise/latency override (ISO 10218)'}
+        
+        # NOTE (v0 prototype): Random noise was previously used here to simulate
+        # quantum measurement uncertainty. This is not appropriate for a safety kernel.
+        # Deterministic latency-only check retained. Real noise modelling is planned
+        # via the quantum layer in a future version.
+        if (time.time() - start) * 1000 > thresholds.get('latency_ms', 50):
+            return {'action': 'halt', 'reason': 'EU latency threshold exceeded (ISO 10218)'}
+        
         ai_output['audit_trace'] = f'EU compliant passed at {(time.time() - start) * 1000 :.2f}ms'
         return ai_output
 
     return ai_output
-
-
-
