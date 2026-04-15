@@ -18,6 +18,7 @@ class QuantumResistantEthicalAccessVector:
 
     def ethical_access_request(self, request_context: str) -> float:
         """Ethical penalty (0-1) — low allows access in justified emergencies"""
+        # v0: uses 4 heuristic dimensions. Full SEMEV-12 integration planned — see ARCHITECTURE.md
         harm_urgency = 0.9 if any(word in request_context.lower() for word in ["life-threatening", "emergency", "harm"]) else 0.2
         legal_validity = 0.8 if "warrant" in request_context.lower() or "legal" in request_context.lower() else 0.1
         fairness_score = 0.7  # Extend with full SEMEV-12 later
