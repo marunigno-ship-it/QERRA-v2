@@ -62,6 +62,7 @@ flowchart TD
     C --> D[Safety kernel — region-aware override]
     D --> E[Output: score + decision + audit trace]
     F[Quantum layer — W-state simulation] -.->|future integration| B
+
 Quantum Proof of Concept
 
 A real 8-qubit W-state was successfully executed on IBM quantum hardware in January 2026 (Job ID: 598eb802-0a56-428c-aec0-b23edca61e3c).
