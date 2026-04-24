@@ -103,5 +103,13 @@ python qerra.py
 
 ## Support this project
 
-QERRA-v2 is built entirely by a solo researcher under significant personal constraints.  
-If you find it valuable, please consider [GitHub Sponsors](https://github.com/sponsors/marunigno-ship-it) or simply starring the repo.
+QERRA-v2 is built entirely by a solo researcher under significant personal constraints.
+
+**Every sponsorship helps keep the live API running and the development alive.**
+
+- **$10/month** → Keeps the API online and helps sustain long-term work  
+- **Any amount** is deeply appreciated
+
+→ [Sponsor on GitHub ❤️](https://github.com/sponsors/marunigno-ship-it)
+
+You can also support by starring the repo or sharing it with robotics/AI safety communities.
