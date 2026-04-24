@@ -43,6 +43,12 @@ You can integrate it as a lightweight safety wrapper around your existing contro
 
 ---
 
+**Support the Project**  
+Built solo under difficult conditions.  
+**$10/month** helps keep the live API running and the work moving forward.
+
+→ [Sponsor on GitHub ❤️](https://github.com/sponsors/marunigno-ship-it)
+
 **Next Step**  
 Test the live API yourself:  
 https://qerra-v2-api-production.up.railway.app/docs
