@@ -15,9 +15,12 @@ class ToxicityManipulationDetector:
         results = self.toxicity_model.predict(text)
         return max(results.values())
 
-    def deception_score(self, text: str) -> float:
-        result = self.deception_classifier(text)[0]
-        return result['score'] if result['label'] == 'FAKE' else 1 - result['score']
+        def deception_score(self, text: str) -> float:
+        """DECEPTION CLASSIFIER DISABLED for honesty.
+        Always returns 0.0. The valuable part (manipulation drift via variance)
+        is preserved in global_ethical_penalty().
+        """
+        return 0.0
 
     def global_ethical_penalty(self) -> float:
         """Global penalty (0-1) for ALL vectors — detects malicious shifting/toxicity"""
