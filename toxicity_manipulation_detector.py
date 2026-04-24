@@ -15,7 +15,7 @@ class ToxicityManipulationDetector:
         results = self.toxicity_model.predict(text)
         return max(results.values())
 
-        def deception_score(self, text: str) -> float:
+            def deception_score(self, text: str) -> float:
         """DECEPTION CLASSIFIER DISABLED for honesty.
         Always returns 0.0. The valuable part (manipulation drift via variance)
         is preserved in global_ethical_penalty().
