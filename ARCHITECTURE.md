@@ -36,9 +36,10 @@ The core ethical scoring mechanism. Each decision is evaluated across 12 ethical
 
 **Layer 3 — Toxicity & Manipulation Detector**  
 A multi-turn, multilingual pre-screening layer that computes a global ethical penalty P ∈ [0, 1] applied across all SEMEV-12 vectors. It combines:
-- Toxicity scoring via the Detoxify multilingual model
-- Deception probability via a RoBERTa-based classifier
-- Manipulation drift detection via variance across conversation turns
+It combines:
+
+* Toxicity scoring via the Detoxify multilingual model
+* Manipulation drift detection via variance across conversation turns
 
 The final penalty is the maximum of these signals and directly influences the ethical scores.
 
