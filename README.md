@@ -29,7 +29,9 @@ The classical safety layer is functional. The quantum layer is a simulation. No 
 
 QERRA-v2 analyses text inputs through a multi-layer pipeline:
 
-1. **Toxicity & manipulation detection** — uses the Detoxify multilingual model and a deception classifier to score input text
+1. **Toxicity & manipulation detection** — uses the Detoxify multilingual model + variance-based conversational drift tracking
+
+
 2. **Ethical vector scoring (SEMEV-12)** — applies 12 ethical dimensions derived from human values (early heuristic version)
 3. **Safety kernel** — applies region-aware override logic with audit trace output
 4. **Post-quantum access control** — Kyber-768 encrypted asset access with ethical gating
